@@ -39,5 +39,4 @@ def enable(app):
   add_hook('app.player.playlist.song_changed', notifier.caller)
 
 def disable(app):
-  notifier = None
   rm_hook('app.player.playlist.song_changed', notifier.caller)
